@@ -1,6 +1,6 @@
 # 🍽️ AI Recipe Generator
 
-An AI-powered **Recipe Generator** built using **Python Flask** and the **Groq API**. Simply enter the ingredients you have, and the application generates a creative recipe complete with a recipe name, funny title, cooking instructions, and a fun cooking fact.
+An AI-powered **Recipe Generator** built using **Python Flask** and the **Groq API**. Simply enter the ingredients you have, and the application generates a delicious recipe complete with a creative recipe name, funny title, step-by-step cooking instructions, and a fun cooking fact.
 
 ---
 
@@ -40,6 +40,8 @@ RecipeGenerator/
 ├── .venv/
 ├── .vscode/
 ├── screenshots/
+│   ├── home.png
+│   └── result.png
 │
 ├── static/
 │   ├── css/
@@ -72,14 +74,14 @@ cd RecipeGenerator
 
 ### 2. Create a Virtual Environment
 
-#### Windows
+**Windows**
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-#### Linux/macOS
+**Linux/macOS**
 
 ```bash
 python3 -m venv .venv
@@ -94,13 +96,11 @@ pip install -r requirements.txt
 
 ### 4. Configure Environment Variables
 
-Create a `.env` file in the project root.
+Create a `.env` file in the project root and add your Groq API key:
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
 ```
-
-Replace `your_groq_api_key_here` with your Groq API key.
 
 ### 5. Run the Application
 
@@ -120,7 +120,7 @@ http://127.0.0.1:5000
 
 1. Enter the ingredients you have.
 2. Click **Generate Recipe**.
-3. The Flask backend sends the ingredients to the **Groq AI** model.
+3. The Flask backend sends the ingredients to the Groq AI model.
 4. The AI generates a complete recipe.
 5. The generated recipe is displayed instantly.
 6. Copy the recipe using the **Copy** button if needed.
@@ -129,11 +129,11 @@ http://127.0.0.1:5000
 
 ## 📸 Screenshots
 
-### Home Page
+### 🏠 Home Page
 
-![Home Page](screenshots/homepage.png)
+![Home Page](screenshots/home.png)
 
-### Generated Recipe
+### 🍽️ Generated Recipe
 
 ![Generated Recipe](screenshots/result.png)
 
@@ -147,7 +147,7 @@ Install all required packages:
 pip install -r requirements.txt
 ```
 
-Main packages used:
+Packages used:
 
 - Flask
 - groq
@@ -158,7 +158,7 @@ Main packages used:
 ## 🎯 Future Enhancements
 
 - 🍕 Cuisine selection
-- 🥦 Nutritional information
+- 🥦 Nutrition and calorie information
 - ❤️ Save favorite recipes
 - 📜 Recipe history
 - 📄 Export recipes as PDF
@@ -173,7 +173,7 @@ Main packages used:
 
 This project demonstrates:
 
-- Flask web development
+- Flask web application development
 - AI API integration using Groq
 - Environment variable management
 - HTML template rendering with Jinja2
@@ -187,7 +187,7 @@ This project demonstrates:
 
 Contributions are welcome!
 
-1. Fork the repository.
+1. Fork this repository.
 2. Create a new branch.
 
 ```bash
@@ -200,7 +200,7 @@ git checkout -b feature-name
 git commit -m "Add new feature"
 ```
 
-4. Push to GitHub.
+4. Push your changes.
 
 ```bash
 git push origin feature-name
@@ -216,7 +216,7 @@ git push origin feature-name
 
 Engineering Student
 
-GitHub: **https://github.com/PalakD42**
+🔗 GitHub: https://github.com/PalakD42
 
 ---
 
@@ -228,6 +228,6 @@ This project is licensed under the **MIT License**.
 
 ## ⭐ Support
 
-If you found this project helpful, consider giving it a **⭐ Star** on GitHub.
+If you found this project helpful, please consider giving it a **⭐ Star** on GitHub.
 
 Happy Coding! 🚀
