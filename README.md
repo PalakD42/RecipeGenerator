@@ -1,47 +1,62 @@
-# 🍽️ Recipe Generator
+# 🍽️ AI Recipe Generator
 
-An AI-powered **Recipe Generator** built using **Python Flask** that creates delicious recipes based on the ingredients provided by the user. The application uses an AI API to generate recipes with ingredients, cooking instructions, and useful cooking tips.
+An AI-powered **Recipe Generator** built using **Python Flask** and the **Groq API**. Simply enter the ingredients you have, and the application generates a creative recipe complete with a recipe name, funny title, cooking instructions, and a fun cooking fact.
 
 ---
 
 ## 🚀 Features
 
 - 🥗 Generate recipes from available ingredients
-- 🤖 AI-powered recipe suggestions
-- 🎨 Simple and responsive web interface
+- 🤖 AI-powered recipe generation using **Groq Llama 3.1**
+- 🍽️ Creative and funny recipe names
+- 📋 Step-by-step cooking instructions
+- 💡 Fun cooking facts
+- 📄 Copy generated recipes to the clipboard
+- 🎨 Clean and responsive user interface
 - ⚡ Fast Flask backend
 - 🔒 Secure API key management using `.env`
-- 📱 User-friendly design
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python**
-- **Flask**
-- **HTML5**
-- **CSS3**
-- **Jinja2**
-- **Python-dotenv**
-- **OpenAI API / Google Gemini API**
+- Python
+- Flask
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+- Jinja2
+- Groq API
+- python-dotenv
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 RecipeGenerator/
 │
-├── .venv/                 # Virtual environment
-├── .vscode/               # VS Code settings
-├── templates/             # HTML templates
+├── .venv/
+├── .vscode/
+├── screenshots/
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── images/
+│   │   └── background.jpg
+│   └── js/
+│       └── script.js
+│
+├── templates/
 │   └── index.html
 │
-├── .env                   # API key (not uploaded to GitHub)
-├── app.py                 # Main Flask application
-├── requirements.txt       # Project dependencies
-├── .gitignore             # Git ignore file
-└── README.md              # Project documentation
+├── .env
+├── .gitignore
+├── app.py
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -57,14 +72,14 @@ cd RecipeGenerator
 
 ### 2. Create a Virtual Environment
 
-**Windows**
+#### Windows
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-**Linux/macOS**
+#### Linux/macOS
 
 ```bash
 python3 -m venv .venv
@@ -81,13 +96,11 @@ pip install -r requirements.txt
 
 Create a `.env` file in the project root.
 
-Example:
-
 ```env
-API_KEY=your_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
 ```
 
-Replace `your_api_key_here` with your AI API key.
+Replace `your_groq_api_key_here` with your Groq API key.
 
 ### 5. Run the Application
 
@@ -107,9 +120,10 @@ http://127.0.0.1:5000
 
 1. Enter the ingredients you have.
 2. Click **Generate Recipe**.
-3. The Flask backend sends the ingredients to the AI model.
+3. The Flask backend sends the ingredients to the **Groq AI** model.
 4. The AI generates a complete recipe.
-5. The generated recipe is displayed on the webpage.
+5. The generated recipe is displayed instantly.
+6. Copy the recipe using the **Copy** button if needed.
 
 ---
 
@@ -117,46 +131,27 @@ http://127.0.0.1:5000
 
 ### Home Page
 
-> Add a screenshot here.
-
-```
-screenshots/homepage.png
-```
+![Home Page](screenshots/homepage.png)
 
 ### Generated Recipe
 
-> Add a screenshot here.
-
-```
-screenshots/result.png
-```
+![Generated Recipe](screenshots/result.png)
 
 ---
 
 ## 📦 Requirements
 
-Install all required packages using:
+Install all required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Typical packages include:
+Main packages used:
 
-```
-Flask
-python-dotenv
-requests
-google-generativeai
-```
-
-or
-
-```
-Flask
-python-dotenv
-openai
-```
+- Flask
+- groq
+- python-dotenv
 
 ---
 
@@ -166,10 +161,11 @@ openai
 - 🥦 Nutritional information
 - ❤️ Save favorite recipes
 - 📜 Recipe history
+- 📄 Export recipes as PDF
+- 🖼️ AI-generated food images
 - 🌙 Dark mode
 - 🎤 Voice input
-- 📷 Ingredient image recognition
-- 📄 Export recipes as PDF
+- 🌐 Multi-language support
 
 ---
 
@@ -177,12 +173,13 @@ openai
 
 This project demonstrates:
 
-- Flask web application development
-- AI API integration
+- Flask web development
+- AI API integration using Groq
 - Environment variable management
 - HTML template rendering with Jinja2
-- Backend and frontend communication
+- Frontend and backend communication
 - Handling user input securely
+- Building responsive web applications
 
 ---
 
@@ -190,7 +187,7 @@ This project demonstrates:
 
 Contributions are welcome!
 
-1. Fork this repository.
+1. Fork the repository.
 2. Create a new branch.
 
 ```bash
@@ -203,7 +200,7 @@ git checkout -b feature-name
 git commit -m "Add new feature"
 ```
 
-4. Push to your branch.
+4. Push to GitHub.
 
 ```bash
 git push origin feature-name
@@ -213,13 +210,13 @@ git push origin feature-name
 
 ---
 
-## 👨‍💻 Author
+## 👩‍💻 Author
 
 **Palak Dwivedi**
 
 Engineering Student
 
-GitHub: https://github.com/PalakD42
+GitHub: **https://github.com/PalakD42**
 
 ---
 
@@ -231,6 +228,6 @@ This project is licensed under the **MIT License**.
 
 ## ⭐ Support
 
-If you found this project useful, consider giving it a **⭐ Star** on GitHub.
+If you found this project helpful, consider giving it a **⭐ Star** on GitHub.
 
 Happy Coding! 🚀
