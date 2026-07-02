@@ -131,7 +131,7 @@ http://127.0.0.1:5000
 
 ### Home Page
 
-![Home Page](screenshots/homepage.png)
+![Home Page](screenshots/home.png)
 
 ### Generated Recipe
 
